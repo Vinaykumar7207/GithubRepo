@@ -1,0 +1,66 @@
+[versions]
+agp = "8.6.1"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.6"
+activityCompose = "1.9.3"
+composeBom = "2024.10.00" # Use this for Compose
+retrofit = "2.9.0"
+room = "2.6.1"
+
+paging = "3.3.2"
+coroutines = "1.7.3"
+coil = "2.0.0"
+ksp = "2.0.21-1.0.25"
+compose = "1.7.4" # Ensure this is correct for Compose
+navigation = "2.8.3"
+hilt = "2.51"
+junitVersion = "4.12"
+junitKtx = "1.2.1"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+
+# Compose libraries
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material", version.ref = "compose" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "compose" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "compose" }
+
+# Retrofit libraries
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofitGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" } # Changed to 'retrofitGson'
+
+# Room libraries
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+
+# Paging library
+paging-runtime = { group = "androidx.paging", name = "paging-runtime", version.ref = "paging" }
+
+# Coroutines libraries
+kotlinx-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+# Coil library
+coil = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+
+# Dagger Hilt libraries
+
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" } # KSP will use the same version reference
+
+# Navigation library
+navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+
+# KSP library
+ksp = { group = "com.google.devtools.ksp", name = "ksp", version.ref = "ksp" }
+junit = { group = "junit", name = "junit", version.ref = "junitVersion" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
